@@ -40,8 +40,8 @@ training_args = TrainingArguments(
 )
 
 trainer = Trainer(
-    model=model,  # The pre-trained model to be fine-tuned
-    args=training_args,  # Training arguments
+    model=model,
+    args=training_args,
     train_dataset=preprocessed_dataset["train"],  # Training dataset
 )
 
