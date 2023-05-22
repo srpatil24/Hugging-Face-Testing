@@ -20,7 +20,7 @@ def preprocess_function(examples):
 
 preprocessed_dataset = dataset.map(preprocess_function, batched=True)
 
-# Clean the input values
+# Clean the input values of html tags
 for i in range(len(preprocessed_dataset["train"]["input"])):
     html_text = preprocessed_dataset["train"]["input"][i]
     soup = BeautifulSoup(html_text, 'html.parser')
