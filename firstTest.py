@@ -4,6 +4,7 @@ from transformers import Trainer, TrainingArguments, AutoTokenizer, AutoModelFor
 dataset = load_dataset("vicgalle/alpaca-gpt4")
 
 tokenizer = AutoTokenizer.from_pretrained("nomic-ai/gpt4all-j")
+tokenizer.add_special_tokens({'pad_token': '[PAD]'})
 
 model = AutoModelForCausalLM.from_pretrained("nomic-ai/gpt4all-j")
 
