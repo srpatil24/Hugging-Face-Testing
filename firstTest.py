@@ -1,5 +1,6 @@
 from datasets import load_dataset
 from transformers import Trainer, TrainingArguments, AutoTokenizer, AutoModelForCausalLM
+from bs4 import BeautifulSoup
 
 dataset = load_dataset("vicgalle/alpaca-gpt4")
 
@@ -13,11 +14,18 @@ def preprocess_function(examples):
         examples["text"],
         truncation=True,
         padding="max_length",
-        max_length=512
+        max_length=2048
     )
     return tokenized_inputs
 
 preprocessed_dataset = dataset.map(preprocess_function, batched=True)
+
+# Clean the input values
+for i in range(len(preprocessed_dataset["train"]["input"])):
+    html_text = preprocessed_dataset["train"]["input"][i]
+    soup = BeautifulSoup(html_text, 'html.parser')
+    clean_text = soup.get_text()
+    preprocessed_dataset["train"]["input"][i] = clean_text
 
 training_args = TrainingArguments(
     output_dir="./output",
@@ -37,4 +45,4 @@ trainer = Trainer(
     train_dataset=preprocessed_dataset["train"],  # Training dataset
 )
 
-trainer.train()
+#trainer.train()
