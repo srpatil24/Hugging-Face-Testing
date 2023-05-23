@@ -1,4 +1,5 @@
 from datasets import load_dataset
+from datasets import Dataset
 from transformers import Trainer, TrainingArguments, AutoTokenizer, AutoModelForCausalLM
 from bs4 import BeautifulSoup
 from tqdm import tqdm
@@ -21,16 +22,31 @@ def preprocess_function(examples):
 
 preprocessed_dataset = dataset.map(preprocess_function, batched=True)
 
+max_length=2048
+input_ids = preprocessed_dataset["train"]["input_ids"]
+truncated_input_ids = []
+
+for input_id in tqdm(input_ids, desc="Truncating sequences"):
+    truncated_input = input_id[:max_length] if len(input_id) > max_length else input_id
+    truncated_input_ids.append(truncated_input)
+
+updated_dataset = Dataset.from_dict(preprocessed_dataset["train"])
+updated_dataset["input_ids"] = truncated_input_ids
+
+preprocessed_dataset["train"] = updated_dataset
+
+
 # Clean the input values of html tags
 # Also added a progress bar
-dataset_length = len(preprocessed_dataset["train"]["input"])
-for i in tqdm(range(dataset_length), desc="Processing dataset"):
-    html_text = preprocessed_dataset["train"]["input"][i]
-    soup = BeautifulSoup(html_text, 'html.parser')
-    clean_text = soup.get_text()
-    preprocessed_dataset["train"]["input"][i] = clean_text
+#                                                                         dataset_length = len(preprocessed_dataset["train"]["input"])
+# for i in tqdm(range(dataset_length), desc="Processing dataset"):
+#    html_text = preprocessed_dataset["train"]["input"][i]
+#    soup = BeautifulSoup(html_text, 'html.parser')
+#    clean_text = soup.get_text()
+#    preprocessed_dataset["train"]["input"][i] = clean_text
 
-print("             FINISHED PREPROCESSING              ")
+
+print("             STARTING TRAINING              ")
 
 training_args = TrainingArguments(
     output_dir="./output",
@@ -47,7 +63,7 @@ training_args = TrainingArguments(
 trainer = Trainer(
     model=model,
     args=training_args,
-    train_dataset=preprocessed_dataset["train"],  # Training dataset
+    train_dataset=preprocessed_dataset["train"].shard(num_shards=10, index=0),  # Training dataset
 )
 
 trainer.train()
