@@ -1,6 +1,12 @@
 from datasets import load_dataset, Dataset
 from transformers import Trainer, TrainingArguments, AutoTokenizer, AutoModelForCausalLM
 from tqdm import tqdm
+import datetime
+
+#print out current date and time
+now = datetime.datetime.now()
+print ("Current date and time : ")
+print (now.strftime("%Y-%m-%d %H:%M:%S"))
 
 dataset = load_dataset("vicgalle/alpaca-gpt4")
 
