@@ -71,4 +71,6 @@ trainer = Trainer(
     train_dataset=preprocessed_dataset,
 )
 
+print("STARTING TRAINING!")
+
 trainer.train()
