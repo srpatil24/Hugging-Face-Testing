@@ -22,7 +22,7 @@ embedding_dim = model.config.hidden_size
 max_length = 1000
 
 training_args = TrainingArguments(
-    output_dir="./results",
+    output_dir="./output_alpacagpt4",
     overwrite_output_dir=True,
     num_train_epochs=1,
     per_device_train_batch_size=2,
