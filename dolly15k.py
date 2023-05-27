@@ -4,11 +4,6 @@
 from datasets import load_dataset, Dataset
 from transformers import Trainer, TrainingArguments, AutoTokenizer, AutoModelForCausalLM
 from tqdm import tqdm
-import datetime
-
-now = datetime.datetime.now()
-print ("Current date and time : ")
-print (now.strftime("%Y-%m-%d %H:%M:%S"))
 
 dataset = load_dataset("databricks/databricks-dolly-15k", split="train")
 
