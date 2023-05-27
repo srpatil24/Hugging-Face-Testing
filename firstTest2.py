@@ -35,7 +35,6 @@ else:
 
 max_length = 1000
 
-# Fine-tuning configuration
 training_args = TrainingArguments(
     output_dir="./results",
     overwrite_output_dir=True,
@@ -52,8 +51,6 @@ training_args = TrainingArguments(
     seed=42,
 )
 
-# Define a function to preprocess the data
-# Define a function to preprocess the data
 def preprocess_function(examples, max_length):
     inputs = examples["prompt"]
     outputs = examples["response"]
@@ -64,7 +61,6 @@ def preprocess_function(examples, max_length):
     attention_mask = tokenized_inputs["attention_mask"].squeeze()[:max_length]
     labels = tokenized_outputs["input_ids"].squeeze()[:max_length]
 
-    # Ensure all input tensors have the same size
     input_ids = input_ids[:max_length]
     attention_mask = attention_mask[:max_length]
     labels = labels[:max_length]
@@ -79,19 +75,15 @@ def preprocess_function(examples, max_length):
     }
 
 
-
-# Apply the preprocess function to the dataset
 preprocessed_dataset = dataset.map(lambda examples: preprocess_function(examples, max_length), batched=True)
 
 model.resize_token_embeddings(len(tokenizer))
 
-# Initialize the Trainer
 trainer = Trainer(
     model=model,
     args=training_args,
     train_dataset=preprocessed_dataset,
 )
 
-# Start the fine-tuning process
 trainer.train()
 
