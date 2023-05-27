@@ -1,16 +1,20 @@
+#
+# This script finetunes GPT4All-J on the Alpaca-GPT4 dataset
+
 from datasets import load_dataset, Dataset
 from transformers import Trainer, TrainingArguments, AutoTokenizer, AutoModelForCausalLM
 from tqdm import tqdm
 import datetime
 
+#print out current date and time
 now = datetime.datetime.now()
 print ("Current date and time : ")
 print (now.strftime("%Y-%m-%d %H:%M:%S"))
 
-dataset = load_dataset("databricks/databricks-dolly-15k", split="train")
+dataset = load_dataset("vicgalle/alpaca-gpt4", split="train")
 
-dataset = dataset.remove_columns(["context"])
-dataset = dataset.rename_columns({'instruction': 'prompt', 'category': 'source'})
+dataset = dataset.remove_columns(["input"])
+dataset = dataset.rename_columns({'instruction': 'prompt', 'output': 'response', 'text':'source'})
 
 tokenizer = AutoTokenizer.from_pretrained("nomic-ai/gpt4all-j", revision="v1.2-jazzy")
 tokenizer.add_special_tokens({'pad_token': '[PAD]'})
@@ -21,18 +25,6 @@ model.resize_token_embeddings(tokenizer.vocab_size)
 vocab_size = tokenizer.vocab_size
 
 embedding_dim = model.config.hidden_size
-
-print("VOCAB SIZES")
-
-print(vocab_size)
-print(model.config.vocab_size)
-
-
-if vocab_size != model.config.vocab_size:
-    raise ValueError("Tokenizer and model configurations are incompatible.")
-else:
-    print("Vocab sizes are the same!")
-
 max_length = 1000
 
 training_args = TrainingArguments(
@@ -86,4 +78,3 @@ trainer = Trainer(
 )
 
 trainer.train()
-
