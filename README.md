@@ -12,4 +12,4 @@ Scripts have been written to fine-tune [nomic-ai/gpt4all-j](https://huggingface.
 * [vicgalle/alpaca-gpt4](https://huggingface.co/datasets/vicgalle/alpaca-gpt4)
 
 # Problems
-Both scripts require a powerful computer. 8GB VRAM is not enough, have not been able to fully fine-tune as of yet due to this.
+Both scripts require a powerful computer. 8GB VRAM is not enough; have not been able to fully fine-tune as of yet due to this.

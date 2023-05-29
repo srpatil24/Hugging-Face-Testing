@@ -21,6 +21,7 @@ vocab_size = tokenizer.vocab_size
 embedding_dim = model.config.hidden_size
 max_length = 1000
 
+#configure the training arguments
 training_args = TrainingArguments(
     output_dir="./output_alpacagpt4",
     overwrite_output_dir=True,
@@ -38,19 +39,25 @@ training_args = TrainingArguments(
 )
 
 def preprocess_function(examples, max_length):
+    #define what part of the data is the input and what part is the output
     inputs = examples["prompt"]
     outputs = examples["response"]
+
+    #tokenize the inputs and outputs and truncate to max length variable
     tokenized_inputs = tokenizer(inputs, truncation=True, padding="max_length", max_length=max_length, return_tensors="pt")
     tokenized_outputs = tokenizer(outputs, truncation=True, padding="max_length", max_length=max_length, return_tensors="pt")
 
+    #squeeze function removes dimensions of size 1 from input ids, attention mask, and labels to ensure consistent shapes
     input_ids = tokenized_inputs["input_ids"].squeeze()[:max_length]
     attention_mask = tokenized_inputs["attention_mask"].squeeze()[:max_length]
     labels = tokenized_outputs["input_ids"].squeeze()[:max_length]
 
+    #double check to make sure each is less than max length
     input_ids = input_ids[:max_length]
     attention_mask = attention_mask[:max_length]
     labels = labels[:max_length]
 
+    #replaces labels and input ids that are greater than vocab size with tokenizer's unknown token ID
     input_ids = input_ids.masked_fill(input_ids >= vocab_size, tokenizer.unk_token_id)
     labels = labels.masked_fill(labels >= vocab_size, tokenizer.unk_token_id)
 
