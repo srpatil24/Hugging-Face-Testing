@@ -1,0 +1,23 @@
+[
+    {
+        "frame_number": "1",
+        "timestamp": "1127228545.489639000",
+        "source_ip": "10.49.248.136",
+        "destination_ip": "10.49.64.5",
+        "protocol": "ip"
+    },
+    {
+        "frame_number": "2",
+        "timestamp": "1127228545.491588000",
+        "source_ip": "10.49.64.5",
+        "destination_ip": "10.49.248.136",
+        "protocol": "ip"
+    },
+    {
+        "frame_number": "3",
+        "timestamp": "1127228545.491610000",
+        "source_ip": "10.49.248.136",
+        "destination_ip": "10.49.64.5",
+        "protocol": "ip"
+    }
+]
