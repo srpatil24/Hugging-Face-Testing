@@ -73,23 +73,32 @@ def save_tcp_streams_from_pcap(input_file):
                     handshake_packets.append(packet)
             elif packet[TCP].flags == 'A':
                 if initial_syn and syn_ack and not final_ack:
-                    final_ack = True
+                    final_ack=True
                     handshake_packets.append(packet)
 
         # If all three flags are present, add the handshake to the list
         if initial_syn and syn_ack and final_ack:
-            handshake_data = {
-                'stream_key': stream_key,
-                'handshake_packets': [packet_to_dict(packet) for packet in handshake_packets]
+            # Create two rows for the handshake session
+            row1 = {
+                'Response': packet_to_dict(handshake_packets[2]),  # ACK packet
+                'Context': packet_to_dict(handshake_packets[1]),   # SYN-ACK packet
+                'Context/0': packet_to_dict(handshake_packets[0])  # SYN packet
             }
-            handshakes.append(handshake_data)
+            row2 = {
+                'Response': packet_to_dict(handshake_packets[1]),  # SYN-ACK packet
+                'Context': packet_to_dict(handshake_packets[0]),   # SYN packet
+                'Context/0': None                                  # Empty for row 2
+            }
+
+            handshakes.append(row1)
+            handshakes.append(row2)
 
     # Create the output folder if it doesn't exist
     output_folder = "pcap_output"
     os.makedirs(output_folder, exist_ok=True)
 
     # Save the handshakes as a JSON file
-    output_file = os.path.join(output_folder, 'handshakes.json')
+    output_file = os.path.join(output_folder, 'handshakes3.json')
     with open(output_file, 'w') as f:
         json.dump(handshakes, f, indent=4, default=str)
 

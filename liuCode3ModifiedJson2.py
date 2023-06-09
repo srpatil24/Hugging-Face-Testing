@@ -5,38 +5,17 @@ import json
 def packet_to_dict(packet):
     # Convert the packet to a dictionary representation
     packet_dict = {
-        'timestamp': packet.time,
-        'source': packet[IP].src,
-        'destination': packet[IP].dst,
-        'sport': packet[TCP].sport,
-        'dport': packet[TCP].dport,
-        'flags': packet[TCP].flags,
-        'seq': packet[TCP].seq,
-        'ack': packet[TCP].ack,
-        'window': packet[TCP].window,
-        'checksum': packet[TCP].chksum,
-        'urgent_pointer': packet[TCP].urgptr,
-        'options': packet[TCP].options,
-        'payload': str(packet[TCP].payload),
-        'length': len(packet),
-        'ip_version': packet[IP].version,
-        'ip_ttl': packet[IP].ttl,
-        'ip_id': packet[IP].id,
-        'ip_proto': packet[IP].proto,
-        'ip_flags': packet[IP].flags,
-        'ip_tos': packet[IP].tos,
-        'ip_ihl': packet[IP].ihl,
-        'ip_options': packet[IP].options,
-        'eth_source': packet[Ether].src,
-        'eth_destination': packet[Ether].dst,
-        'eth_type': packet[Ether].type,
-        'icmp_type': packet[ICMP].type if 'ICMP' in packet else None,
-        'icmp_code': packet[ICMP].code if 'ICMP' in packet else None,
-        'icmp_payload': str(packet[ICMP].payload) if 'ICMP' in packet else None,
-        'udp_source': packet[UDP].sport if 'UDP' in packet else None,
-        'udp_destination': packet[UDP].dport if 'UDP' in packet else None,
-        'udp_length': packet[UDP].len if 'UDP' in packet else None,
-        'udp_checksum': packet[UDP].chksum if 'UDP' in packet else None,
+        'id': packet.time,  # Use timestamp as the ID
+        'text': f"{packet[IP].src}:{packet[TCP].sport} -> {packet[IP].dst}:{packet[TCP].dport}",
+        'label': packet[TCP].flags,
+        'metadata': {
+            'timestamp': packet.time,
+            'source': packet[IP].src,
+            'destination': packet[IP].dst,
+            'sport': packet[TCP].sport,
+            'dport': packet[TCP].dport,
+            'protocol': packet[IP].proto
+        }
     }
     return packet_dict
 
@@ -79,7 +58,8 @@ def save_tcp_streams_from_pcap(input_file):
         # If all three flags are present, add the handshake to the list
         if initial_syn and syn_ack and final_ack:
             handshake_data = {
-                'stream_key': stream_key,
+                'id': stream_key,  # Use stream key as the ID
+                'text': f"{stream_key[0][0]}:{stream_key[0][1]} -> {stream_key[1][0]}:{stream_key[1][1]}",
                 'handshake_packets': [packet_to_dict(packet) for packet in handshake_packets]
             }
             handshakes.append(handshake_data)
@@ -89,7 +69,7 @@ def save_tcp_streams_from_pcap(input_file):
     os.makedirs(output_folder, exist_ok=True)
 
     # Save the handshakes as a JSON file
-    output_file = os.path.join(output_folder, 'handshakes.json')
+    output_file = os.path.join(output_folder, 'handshakes2.json')
     with open(output_file, 'w') as f:
         json.dump(handshakes, f, indent=4, default=str)
 

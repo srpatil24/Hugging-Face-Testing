@@ -1,0 +1,2177 @@
+[
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                42122
+            ],
+            [
+                "142.250.190.110",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258346.740706",
+                "source": "10.0.2.15",
+                "destination": "142.250.190.110",
+                "sport": 42122,
+                "dport": 443,
+                "flags": "S",
+                "seq": 4243302168,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 22950,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            3366722350,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 56467,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258346.759182",
+                "source": "142.250.190.110",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 42122,
+                "flags": "SA",
+                "seq": 38528001,
+                "ack": 4243302169,
+                "window": 65535,
+                "checksum": 3591,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 12066,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258346.759226",
+                "source": "10.0.2.15",
+                "destination": "142.250.190.110",
+                "sport": 42122,
+                "dport": 443,
+                "flags": "A",
+                "seq": 4243302169,
+                "ack": 38528002,
+                "window": 64240,
+                "checksum": 22930,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 56468,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    },
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                50046
+            ],
+            [
+                "172.217.5.10",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258350.885297",
+                "source": "10.0.2.15",
+                "destination": "172.217.5.10",
+                "sport": 50046,
+                "dport": 443,
+                "flags": "S",
+                "seq": 2896453568,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 48672,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            2017405805,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 52991,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258350.899199",
+                "source": "172.217.5.10",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 50046,
+                "flags": "SA",
+                "seq": 39040001,
+                "ack": 2896453569,
+                "window": 65535,
+                "checksum": 21040,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 12818,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258350.899236",
+                "source": "10.0.2.15",
+                "destination": "172.217.5.10",
+                "sport": 50046,
+                "dport": 443,
+                "flags": "A",
+                "seq": 2896453569,
+                "ack": 39040002,
+                "window": 64240,
+                "checksum": 48652,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 52992,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    },
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                34170
+            ],
+            [
+                "142.250.190.74",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258351.328256",
+                "source": "10.0.2.15",
+                "destination": "142.250.190.74",
+                "sport": 34170,
+                "dport": 443,
+                "flags": "S",
+                "seq": 3642677340,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 22914,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            3155398184,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 27765,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258351.349353",
+                "source": "142.250.190.74",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 34170,
+                "flags": "SA",
+                "seq": 39168001,
+                "ack": 3642677341,
+                "window": 65535,
+                "checksum": 23482,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 13089,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258351.349400",
+                "source": "10.0.2.15",
+                "destination": "142.250.190.74",
+                "sport": 34170,
+                "dport": 443,
+                "flags": "A",
+                "seq": 3642677341,
+                "ack": 39168002,
+                "window": 64240,
+                "checksum": 22894,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 27766,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    },
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                60726
+            ],
+            [
+                "142.250.190.10",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258352.496584",
+                "source": "10.0.2.15",
+                "destination": "142.250.190.10",
+                "sport": 60726,
+                "dport": 443,
+                "flags": "S",
+                "seq": 2561882652,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 22850,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            641032055,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 4752,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258352.529583",
+                "source": "142.250.190.10",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 60726,
+                "flags": "SA",
+                "seq": 39360001,
+                "ack": 2561882653,
+                "window": 65535,
+                "checksum": 58598,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 13498,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258352.537476",
+                "source": "10.0.2.15",
+                "destination": "142.250.190.10",
+                "sport": 60726,
+                "dport": 443,
+                "flags": "A",
+                "seq": 2561882653,
+                "ack": 39360002,
+                "window": 64240,
+                "checksum": 22830,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 4753,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    },
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                60728
+            ],
+            [
+                "142.250.190.10",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258352.496716",
+                "source": "10.0.2.15",
+                "destination": "142.250.190.10",
+                "sport": 60728,
+                "dport": 443,
+                "flags": "S",
+                "seq": 3320225432,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 22850,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            641032055,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 1395,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258352.529583",
+                "source": "142.250.190.10",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 60728,
+                "flags": "SA",
+                "seq": 39424001,
+                "ack": 3320225433,
+                "window": 65535,
+                "checksum": 22836,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 13499,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258352.538128",
+                "source": "10.0.2.15",
+                "destination": "142.250.190.10",
+                "sport": 60728,
+                "dport": 443,
+                "flags": "A",
+                "seq": 3320225433,
+                "ack": 39424002,
+                "window": 64240,
+                "checksum": 22830,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 1396,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    },
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                43874
+            ],
+            [
+                "45.60.62.121",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258353.427416",
+                "source": "10.0.2.15",
+                "destination": "45.60.62.121",
+                "sport": 43874,
+                "dport": 443,
+                "flags": "S",
+                "seq": 2548854246,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 30706,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            3307990663,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 46794,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258353.437027",
+                "source": "45.60.62.121",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 43874,
+                "flags": "SA",
+                "seq": 39552001,
+                "ack": 2548854247,
+                "window": 65535,
+                "checksum": 59140,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 13540,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258353.437133",
+                "source": "10.0.2.15",
+                "destination": "45.60.62.121",
+                "sport": 43874,
+                "dport": 443,
+                "flags": "A",
+                "seq": 2548854247,
+                "ack": 39552002,
+                "window": 64240,
+                "checksum": 30686,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 46795,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    },
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                43890
+            ],
+            [
+                "45.60.62.121",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258353.427772",
+                "source": "10.0.2.15",
+                "destination": "45.60.62.121",
+                "sport": 43890,
+                "dport": 443,
+                "flags": "S",
+                "seq": 2629007191,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 30706,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            3307990664,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 49800,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258353.437520",
+                "source": "45.60.62.121",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 43890,
+                "flags": "SA",
+                "seq": 39616001,
+                "ack": 2629007192,
+                "window": 65535,
+                "checksum": 57019,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 13541,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258353.437587",
+                "source": "10.0.2.15",
+                "destination": "45.60.62.121",
+                "sport": 43890,
+                "dport": 443,
+                "flags": "A",
+                "seq": 2629007192,
+                "ack": 39616002,
+                "window": 64240,
+                "checksum": 30686,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 49801,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    },
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                60736
+            ],
+            [
+                "142.250.190.10",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258353.868603",
+                "source": "10.0.2.15",
+                "destination": "142.250.190.10",
+                "sport": 60736,
+                "dport": 443,
+                "flags": "S",
+                "seq": 3452090575,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 22850,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            641033427,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 8283,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258353.882736",
+                "source": "142.250.190.10",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 60736,
+                "flags": "SA",
+                "seq": 39744001,
+                "ack": 3452090576,
+                "window": 65535,
+                "checksum": 21780,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 13583,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258353.882779",
+                "source": "10.0.2.15",
+                "destination": "142.250.190.10",
+                "sport": 60736,
+                "dport": 443,
+                "flags": "A",
+                "seq": 3452090576,
+                "ack": 39744002,
+                "window": 64240,
+                "checksum": 22830,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 8284,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    },
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                41058
+            ],
+            [
+                "142.250.191.99",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258354.116308",
+                "source": "10.0.2.15",
+                "destination": "142.250.191.99",
+                "sport": 41058,
+                "dport": 443,
+                "flags": "S",
+                "seq": 2235267154,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 23195,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            1379031275,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 1344,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258354.140382",
+                "source": "142.250.191.99",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 41058,
+                "flags": "SA",
+                "seq": 39808001,
+                "ack": 2235267155,
+                "window": 65535,
+                "checksum": 12189,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 13657,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258354.140415",
+                "source": "10.0.2.15",
+                "destination": "142.250.191.99",
+                "sport": 41058,
+                "dport": 443,
+                "flags": "A",
+                "seq": 2235267155,
+                "ack": 39808002,
+                "window": 64240,
+                "checksum": 23175,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 1345,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    },
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                50544
+            ],
+            [
+                "142.250.190.104",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258354.659424",
+                "source": "10.0.2.15",
+                "destination": "142.250.190.104",
+                "sport": 50544,
+                "dport": 443,
+                "flags": "S",
+                "seq": 468785671,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 22944,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            4000233503,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 50380,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258354.671971",
+                "source": "142.250.190.104",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 50544,
+                "flags": "SA",
+                "seq": 39936001,
+                "ack": 468785672,
+                "window": 65535,
+                "checksum": 57117,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 14130,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258354.672082",
+                "source": "10.0.2.15",
+                "destination": "142.250.190.104",
+                "sport": 50544,
+                "dport": 443,
+                "flags": "A",
+                "seq": 468785672,
+                "ack": 39936002,
+                "window": 64240,
+                "checksum": 22924,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 50381,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    },
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                53112
+            ],
+            [
+                "172.217.4.42",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258354.725446",
+                "source": "10.0.2.15",
+                "destination": "172.217.4.42",
+                "sport": 53112,
+                "dport": 443,
+                "flags": "S",
+                "seq": 1807119166,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 48448,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            1946150526,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 42058,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258354.740291",
+                "source": "172.217.4.42",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 53112,
+                "flags": "SA",
+                "seq": 40000001,
+                "ack": 1807119167,
+                "window": 65535,
+                "checksum": 52855,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 14169,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258354.740328",
+                "source": "10.0.2.15",
+                "destination": "172.217.4.42",
+                "sport": 53112,
+                "dport": 443,
+                "flags": "A",
+                "seq": 1807119167,
+                "ack": 40000002,
+                "window": 64240,
+                "checksum": 48428,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 42059,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    },
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                37074
+            ],
+            [
+                "172.217.5.2",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258354.949184",
+                "source": "10.0.2.15",
+                "destination": "172.217.5.2",
+                "sport": 37074,
+                "dport": 443,
+                "flags": "S",
+                "seq": 204753960,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 48664,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            786852288,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 48803,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258354.961736",
+                "source": "172.217.5.2",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 37074,
+                "flags": "SA",
+                "seq": 40128001,
+                "ack": 204753961,
+                "window": 65535,
+                "checksum": 40668,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 14261,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258354.961810",
+                "source": "10.0.2.15",
+                "destination": "172.217.5.2",
+                "sport": 37074,
+                "dport": 443,
+                "flags": "A",
+                "seq": 204753961,
+                "ack": 40128002,
+                "window": 64240,
+                "checksum": 48644,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 48804,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    },
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                60816
+            ],
+            [
+                "142.250.191.110",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258354.972349",
+                "source": "10.0.2.15",
+                "destination": "142.250.191.110",
+                "sport": 60816,
+                "dport": 443,
+                "flags": "S",
+                "seq": 1111370609,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 23206,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            4029798022,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 28959,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258354.985542",
+                "source": "142.250.191.110",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 60816,
+                "flags": "SA",
+                "seq": 40192001,
+                "ack": 1111370610,
+                "window": 65535,
+                "checksum": 38460,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 14271,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258354.985614",
+                "source": "10.0.2.15",
+                "destination": "142.250.191.110",
+                "sport": 60816,
+                "dport": 443,
+                "flags": "A",
+                "seq": 1111370610,
+                "ack": 40192002,
+                "window": 64240,
+                "checksum": 23186,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 28960,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    },
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                54536
+            ],
+            [
+                "142.250.112.154",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258355.109236",
+                "source": "10.0.2.15",
+                "destination": "142.250.112.154",
+                "sport": 54536,
+                "dport": 443,
+                "flags": "S",
+                "seq": 1084920013,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 3026,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            2772568791,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 60114,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258355.130570",
+                "source": "142.250.112.154",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 54536,
+                "flags": "SA",
+                "seq": 40256001,
+                "ack": 1084920014,
+                "window": 65535,
+                "checksum": 40911,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 14319,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258355.130649",
+                "source": "10.0.2.15",
+                "destination": "142.250.112.154",
+                "sport": 54536,
+                "dport": 443,
+                "flags": "A",
+                "seq": 1084920014,
+                "ack": 40256002,
+                "window": 64240,
+                "checksum": 3006,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 60115,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    },
+    {
+        "stream_key": [
+            [
+                "10.0.2.15",
+                40646
+            ],
+            [
+                "142.250.191.196",
+                443
+            ]
+        ],
+        "handshake_packets": [
+            {
+                "timestamp": "1686258355.195792",
+                "source": "10.0.2.15",
+                "destination": "142.250.191.196",
+                "sport": 40646,
+                "dport": 443,
+                "flags": "S",
+                "seq": 4069064795,
+                "ack": 0,
+                "window": 64240,
+                "checksum": 23292,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ],
+                    [
+                        "SAckOK",
+                        "b''"
+                    ],
+                    [
+                        "Timestamp",
+                        [
+                            2175537540,
+                            0
+                        ]
+                    ],
+                    [
+                        "NOP",
+                        null
+                    ],
+                    [
+                        "WScale",
+                        7
+                    ]
+                ],
+                "payload": "",
+                "length": 74,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 33245,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258355.210650",
+                "source": "142.250.191.196",
+                "destination": "10.0.2.15",
+                "sport": 443,
+                "dport": 40646,
+                "flags": "SA",
+                "seq": 40320001,
+                "ack": 4069064796,
+                "window": 65535,
+                "checksum": 27513,
+                "urgent_pointer": 0,
+                "options": [
+                    [
+                        "MSS",
+                        1460
+                    ]
+                ],
+                "payload": "Padding",
+                "length": 60,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 14334,
+                "ip_proto": 6,
+                "ip_flags": "",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "52:54:00:12:35:02",
+                "eth_destination": "08:00:27:20:d1:d7",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            },
+            {
+                "timestamp": "1686258355.210742",
+                "source": "10.0.2.15",
+                "destination": "142.250.191.196",
+                "sport": 40646,
+                "dport": 443,
+                "flags": "A",
+                "seq": 4069064796,
+                "ack": 40320002,
+                "window": 64240,
+                "checksum": 23272,
+                "urgent_pointer": 0,
+                "options": [],
+                "payload": "",
+                "length": 54,
+                "ip_version": 4,
+                "ip_ttl": 64,
+                "ip_id": 33246,
+                "ip_proto": 6,
+                "ip_flags": "DF",
+                "ip_tos": 0,
+                "ip_ihl": 5,
+                "ip_options": [],
+                "eth_source": "08:00:27:20:d1:d7",
+                "eth_destination": "52:54:00:12:35:02",
+                "eth_type": 2048,
+                "icmp_type": null,
+                "icmp_code": null,
+                "icmp_payload": null,
+                "udp_source": null,
+                "udp_destination": null,
+                "udp_length": null,
+                "udp_checksum": null
+            }
+        ]
+    }
+]
